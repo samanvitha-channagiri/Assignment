@@ -2,6 +2,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const Doctor = require('./models/Doctor')
 require('dotenv').config();
 
 const app = express();
@@ -29,7 +30,7 @@ const DoctorSchema = new mongoose.Schema({
         coordinates: { type: [Number], index: '2dsphere' } // [longitude, latitude]
     }
 });
-const Doctor = mongoose.model('Doctor', DoctorSchema);
+// const Doctor = mongoose.model('Doctor', DoctorSchema);
 
 // routes/doctors.js
 app.post('/api/doctors', async (req, res) => {
