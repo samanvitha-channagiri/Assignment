@@ -1,0 +1,8 @@
+@import 'leaflet/dist/leaflet.css';
+@import 'leaflet-control-geocoder/dist/Control.Geocoder.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your other custom CSS styles can go here */
